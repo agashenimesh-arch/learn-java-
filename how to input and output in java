@@ -1,0 +1,14 @@
+class firstprograminjava_output_and_input_learn {
+    public static void main(String[] args) {
+        // Output
+        System.out.println("Hello, World!"); // This will print "Hello, World!" to the console
+
+        // Input
+        java.util.Scanner scanner = new java.util.Scanner(System.in); // Create a Scanner object to read input
+        System.out.print("Enter your name: "); // Prompt the user for input
+        String name = scanner.nextLine(); // Read a line of input from the user and store it in the variable 'name'
+        System.out.println("Hello, " + name + "!"); // Greet the user by name
+
+        scanner.close(); // Close the scanner to prevent resource leaks
+    }
+}
